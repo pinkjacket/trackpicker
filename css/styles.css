@@ -1,5 +1,11 @@
 body {
+  font-family: arial;
   background-color: lightblue;
+}
+
+h3 {
+  font-style: oblique;
+  text-align: center;
 }
 
 #questions {
@@ -12,14 +18,15 @@ body {
 
 #answers {
   border-style: inset;
-  border-width: thin;
-  border-color: black;
+  border-width: medium;
   border-radius: 10%;
   padding: 15px;
   background-color: pink;
   display: none;
   margin-top: 10px;
 }
+
+
 
 #php {
   display: none;
