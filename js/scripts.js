@@ -6,32 +6,32 @@ $(document).ready(function() {
     var answer4 = $("select#pref4").val();
     var answer5 = $("select#pref5").val();
 
-    if (answer1 === "backend") {
-      $ ('#php').show();
-      $ ('#css').hide();
-      $ ('#ruby').hide();
-      $ ('#java').hide();
+    if ((answer1 === "backend" && answer3 === "back" && answer4 === "forumno") || (answer1 === "web" && answer3 === "back" && answer4 === "forumno"))  {
+      $ ("#php").show();
+      $ ("#css").hide();
+      $ ("#ruby").hide();
+      $ ("#java").hide();
     }
 
     else if (answer1 === "visual") {
-      $ ('#php').hide();
-      $ ('#css').show();
-      $ ('#ruby').hide();
+      $ ("#php").hide();
+      $ ("#css").show();
+      $ ("#ruby").hide();
       $ ('#java').hide();
     }
 
-    else if (answer1 === "web") {
-      $ ('#php').hide();
-      $ ('#css').hide();
-      $ ('#ruby').show();
-      $ ('#java').hide();
+    else if ((answer1 === "web" && answer3 === "back" && answer4 === "forumyes") || (answer1 === "backend" && answer3 === "front" && answer4 === "forumyes") || (answer1 === "backend" && answer3 === "back" && answer4 === "forumyes")){
+      $ ("#php").hide();
+      $ ("#css").hide();
+      $ ("#ruby").show();
+      $ ("#java").hide();
     }
 
-    else if (answer1 === "app") {
-      $ ('#php').hide();
-      $ ('#css').hide();
-      $ ('#ruby').hide();
-      $ ('#java').show();
+    else if ((answer1 === "app") || (answer1 === "web" && answer2 === "yes") || (answer1 === "backend" && answer2 === "yes")) {
+      $ ("#php").hide();
+      $ ("#css").hide();
+      $ ("#ruby").hide();
+      $ ("#java").show();
     }
     event.preventDefault();
   });
