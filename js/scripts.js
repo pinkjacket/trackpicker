@@ -8,6 +8,30 @@ $(document).ready(function() {
 
     if (answer1 === "backend") {
       $ ('#php').show();
+      $ ('#css').hide();
+      $ ('#ruby').hide();
+      $ ('#java').hide();
+    }
+
+    else if (answer1 === "visual") {
+      $ ('#php').hide();
+      $ ('#css').show();
+      $ ('#ruby').hide();
+      $ ('#java').hide();
+    }
+
+    else if (answer1 === "web") {
+      $ ('#php').hide();
+      $ ('#css').hide();
+      $ ('#ruby').show();
+      $ ('#java').hide();
+    }
+
+    else if (answer1 === "app") {
+      $ ('#php').hide();
+      $ ('#css').hide();
+      $ ('#ruby').hide();
+      $ ('#java').show();
     }
     event.preventDefault();
   });
