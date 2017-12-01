@@ -1,10 +1,12 @@
 $(document).ready(function() {
   $("form#trackqs").submit(function() {
+    var studentName = $("input#nameEntry").val();
     var answer1 = $("select#pref1").val();
     var answer2 = $("select#pref2").val();
     var answer3 = $("select#pref3").val();
     var answer4 = $("select#pref4").val();
     var answer5 = $("select#pref5").val();
+    $("#nameReturn").text(studentName);
 
     if ((answer1 === "backend" && answer3 === "back" && answer4 === "forumno") || (answer1 === "web" && answer3 === "back" && answer4 === "forumno"))  {
       $ ("#answers").show();

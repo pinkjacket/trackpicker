@@ -10,6 +10,8 @@
   <body>
     <div class="container" id="questions">
       <form id="trackqs">
+        <label for="nameEntry">Name, please:</label>
+        <input id="nameEntry" class="form-control" type="text">
         <label>What would you like to be able to make?</label>
         <select class="form-control" id="pref1">
           <option value="backend">Website backends</option>
@@ -44,20 +46,21 @@
       </form>
     </div>
     <div class="container" id="answers">
+      <h2>Thank you <span id="nameReturn"></span>, your results are below.</h2>
       <div id="php">
-        <h2>PHP</h2>
+        <h3>PHP</h3>
         <p>A very popular backend language, websites of all kinds are based on PHP.</p>
       </div>
       <div id="css">
-        <h2>CSS</h2>
+        <h3>CSS</h3>
         <p>CSS determines things like page layouts and what users see when looking at a website. It's a good choice for the visually-minded.</p>
       </div>
       <div id="ruby">
-        <h2>Ruby</h2>
+        <h3>Ruby</h3>
         <p>Ruby is a popular language for building heavily interactive web content. Forums, or most sites with accounts, are often made with Ruby.</p>
       </div>
       <div id="java">
-        <h2>Java</h2>
+        <h3>Java</h3>
         <p>Java is a widespread programming language used in many applications, and tied closely to Android.</p>
       </div>
     </div>
