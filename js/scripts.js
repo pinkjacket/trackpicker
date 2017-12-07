@@ -14,6 +14,7 @@ $(document).ready(function() {
       $ ("#css").hide();
       $ ("#ruby").hide();
       $ ("#java").hide();
+      $("#other").hide();
     }
 
     else if (answer1 === "visual") {
@@ -22,6 +23,7 @@ $(document).ready(function() {
       $ ("#css").show();
       $ ("#ruby").hide();
       $ ('#java').hide();
+      $("#other").hide();
     }
 
     else if ((answer1 === "web" && answer3 === "back" && answer4 === "forumyes") || (answer1 === "backend" && answer3 === "front" && answer4 === "forumyes") || (answer1 === "backend" && answer3 === "back" && answer4 === "forumyes")){
@@ -30,6 +32,7 @@ $(document).ready(function() {
       $ ("#css").hide();
       $ ("#ruby").show();
       $ ("#java").hide();
+      $("#other").hide();
     }
 
     else if ((answer1 === "app") || (answer1 === "web" && answer2 === "yes") || (answer1 === "backend" && answer2 === "yes")) {
@@ -38,6 +41,16 @@ $(document).ready(function() {
       $ ("#css").hide();
       $ ("#ruby").hide();
       $ ("#java").show();
+      $("#other").hide();
+    }
+
+    else {
+      $ ("#answers").show();
+      $ ("#php").hide();
+      $ ("#css").hide();
+      $ ("#ruby").hide();
+      $ ("#java").hide();
+      $("#other").show();
     }
     event.preventDefault();
   });
